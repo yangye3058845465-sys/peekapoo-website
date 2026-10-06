@@ -272,8 +272,6 @@ p { margin: 0; }
 .member__photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%; border-radius: var(--radius-lg); background: var(--cream); }
 .member h3 { margin-top: 18px; font-size: 20px; }
 .member p { margin-top: 2px; font-size: 14px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
-.member__photo--initials { display: grid; place-items: center; background: linear-gradient(160deg, var(--cream), var(--stone)); }
-.member__photo--initials span { font: 500 clamp(36px, 4vw, 56px)/1 var(--font-head); letter-spacing: .02em; color: #9b988f; }
 
 /* Final CTA */
 .cta { position: relative; min-height: 560px; display: flex; align-items: center; overflow: hidden; color: #fff;
