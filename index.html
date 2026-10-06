@@ -23,15 +23,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=c2718c13">
+  <link rel="stylesheet" href="styles.css?v=e01f5468">
   <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-
-<!-- Announcement bar -->
-<div class="announce">
-  Huawei ICT Competition 2026–2027 · Innovation Track — <a href="#team">Meet Team InsideOut</a>
-</div>
 
 <!-- Navigation -->
 <header class="nav" id="top">
@@ -259,15 +254,32 @@
 
   <!-- Team -->
   <section class="section section--white" id="team">
-    <div class="container split">
-      <div class="reveal">
-        <p class="eyebrow">The team</p>
-        <h2>We are Team InsideOut</h2>
-        <p>Three students from Universiti Sains Malaysia (USM), building PeekaPoo for the Huawei ICT Competition 2026–2027 Innovation Track — because gut health deserves the same attention as our steps and sleep.</p>
-      </div>
-      <figure class="team-photo reveal">
-        <img src="assets/team.png" alt="Portraits of the three members of Team InsideOut">
-      </figure>
+    <div class="container">
+      <h2 class="reveal">The team</h2>
+      <ul class="team reveal">
+        <li class="member">
+          <img class="member__photo" src="assets/team-gooi-hooi-qi.jpg" alt="Gooi Hooi Qi" width="480" height="600" loading="lazy">
+          <h3>Gooi Hooi Qi</h3>
+          <p>CEO</p>
+        </li>
+        <li class="member">
+          <img class="member__photo" src="assets/team-yang-ye.jpg" alt="Yang Ye" width="480" height="600" loading="lazy">
+          <h3>Yang Ye</h3>
+          <p>CTO</p>
+        </li>
+        <li class="member">
+          <img class="member__photo" src="assets/team-tan-xiang-huey.jpg" alt="Tan Xiang Huey" width="480" height="600" loading="lazy">
+          <h3>Tan Xiang Huey</h3>
+          <p>CMO</p>
+        </li>
+        <li class="member member--advisor">
+          <!-- Placeholder until Dr. Chong's photo arrives: replace this div with
+               <img class="member__photo" src="assets/team-chong-yung-wey.jpg" alt="Dr. Chong Yung Wey" width="480" height="600" loading="lazy"> -->
+          <div class="member__photo member__photo--initials" aria-hidden="true"><span>CYW</span></div>
+          <h3>Dr. Chong Yung Wey</h3>
+          <p>Technical Advisor</p>
+        </li>
+      </ul>
     </div>
   </section>
 

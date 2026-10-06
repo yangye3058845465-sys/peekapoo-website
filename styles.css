@@ -68,8 +68,6 @@ p { margin: 0; }
 .btn--light { background: var(--white); color: var(--ink); }
 
 /* Announcement + nav */
-.announce { background: #000; color: #fff; font-size: 14px; text-align: center; padding: 10px 16px; }
-.announce a { font-weight: 600; }
 .nav { position: sticky; top: 0; z-index: 50; background: rgba(247, 246, 242, .92); backdrop-filter: blur(12px); border-bottom: 1px solid transparent; transition: border-color .2s; }
 .nav.is-scrolled { border-bottom-color: var(--stone); }
 .nav__inner { display: flex; align-items: center; height: 76px; gap: 40px; }
@@ -93,7 +91,7 @@ p { margin: 0; }
 .nav__mobile a { padding: 12px 0; font-size: 18px; font-family: var(--font-head); text-decoration: none; border-bottom: 1px solid var(--stone); }
 
 /* Hero — product film behind a warm veil */
-.hero { position: relative; min-height: 600px; height: calc(100svh - 116px); max-height: 760px; display: flex; align-items: center; overflow: hidden; background: #f1eee8; }
+.hero { position: relative; min-height: 600px; height: calc(100svh - 76px); max-height: 760px; display: flex; align-items: center; overflow: hidden; background: #f1eee8; }
 .hero__video { position: absolute; top: 0; right: 0; bottom: 0; left: 27%; width: 73%; height: 100%; object-fit: cover; object-position: 50% 50%; }
 .hero__veil { position: absolute; inset: 0; background: linear-gradient(90deg, #f1eee8 0%, #f1eee8 27%, rgba(241, 238, 232, .6) 37%, rgba(241, 238, 232, 0) 48%); }
 .hero__toggle { position: absolute; right: 24px; bottom: 24px; z-index: 2; display: grid; place-items: center; width: 40px; height: 40px; border: 0; border-radius: 50%; cursor: pointer; color: var(--ink);
@@ -270,9 +268,12 @@ p { margin: 0; }
 .seal + div p { margin-top: 18px; color: var(--ink-2); font-size: 17px; }
 
 /* Team */
-.team-photo { margin: 0; border-radius: var(--radius-lg); overflow: hidden; background: var(--cream); }
-.team-photo img { width: 100%; }
-#team .split p:not(.eyebrow) { margin-top: 20px; color: var(--ink-2); font-size: 17px; }
+.team { list-style: none; margin: 48px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.member__photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%; border-radius: var(--radius-lg); background: var(--cream); }
+.member h3 { margin-top: 18px; font-size: 20px; }
+.member p { margin-top: 2px; font-size: 14px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.member__photo--initials { display: grid; place-items: center; background: linear-gradient(160deg, var(--cream), var(--stone)); }
+.member__photo--initials span { font: 500 clamp(36px, 4vw, 56px)/1 var(--font-head); letter-spacing: .02em; color: #9b988f; }
 
 /* Final CTA */
 .cta { position: relative; min-height: 560px; display: flex; align-items: center; overflow: hidden; color: #fff;
@@ -310,7 +311,7 @@ p { margin: 0; }
 .nav__links a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1.5px; }
 .nav__mobile a[aria-current="page"] { font-weight: 600; }
 
-.photo-hero { position: relative; height: calc(100svh - 116px); min-height: 560px; max-height: 760px; display: flex; align-items: center; overflow: hidden; background: #2c211d; }
+.photo-hero { position: relative; height: calc(100svh - 76px); min-height: 560px; max-height: 760px; display: flex; align-items: center; overflow: hidden; background: #2c211d; }
 .photo-hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 55%; }
 .photo-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(22, 15, 10, .62) 0%, rgba(22, 15, 10, .25) 50%, rgba(22, 15, 10, 0) 75%); }
 .photo-hero__content { position: relative; z-index: 1; }
@@ -445,6 +446,7 @@ p { margin: 0; }
   .section { padding: 80px 0; }
   .cards3 { grid-template-columns: 1fr; }
   .personas { grid-template-columns: 1fr; gap: 44px; }
+  .team { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
   .common { grid-template-columns: 1fr; }
   .common__item + .common__item { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
   .metric-card { min-height: 460px; }
@@ -460,7 +462,6 @@ p { margin: 0; }
 }
 @media (max-width: 600px) {
   :root { --gutter: 16px; }
-  .announce { font-size: 12px; }
   .nav .btn--sm { display: none; }
   .badges { grid-template-columns: repeat(2, 1fr); }
   .stats { grid-template-columns: 1fr; }
