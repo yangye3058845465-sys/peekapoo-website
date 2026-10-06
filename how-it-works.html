@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How PeekaPoo Works – Sensing, Edge AI, Cloud &amp; App</title>
+  <meta name="description" content="How PeekaPoo works: a non-contact camera and gas sensor array, on-device AI on Atlas 200I DK A2, Huawei Cloud trends and a HarmonyOS app — from your toilet to your phone.">
+  <link rel="canonical" href="https://yangye3058845465-sys.github.io/peekapoo-website/how-it-works.html">
+  <meta name="theme-color" content="#f7f6f2">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PeekaPoo">
+  <meta property="og:title" content="How PeekaPoo Works – Sensing, Edge AI, Cloud &amp; App">
+  <meta property="og:description" content="How PeekaPoo works: a non-contact camera and gas sensor array, on-device AI on Atlas 200I DK A2, Huawei Cloud trends and a HarmonyOS app — from your toilet to your phone.">
+  <meta property="og:url" content="https://yangye3058845465-sys.github.io/peekapoo-website/how-it-works.html">
+  <meta property="og:image" content="https://yangye3058845465-sys.github.io/peekapoo-website/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<!-- Announcement bar -->
+<div class="announce">
+  Huawei ICT Competition 2026–2027 · Innovation Track — <a href="index.html#team">Meet Team InsideOut</a>
+</div>
+
+<!-- Navigation -->
+<header class="nav" id="top">
+  <div class="container nav__inner">
+    <a class="logo" href="index.html" aria-label="PeekaPoo home">
+      <span class="logo__bold">PEEKAPOO</span><span class="logo__light">Health</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="how-it-works.html" aria-current="page">How it Works</a>
+      <a href="app.html">The App</a>
+      <a href="safety.html">Safety</a>
+    </nav>
+    <div class="nav__right">
+      <a class="nav__text" href="index.html#team">Our Team</a>
+      <a class="btn btn--dark btn--sm" href="#pilot">Join the Pilot</a>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav__mobile" hidden>
+    <a href="how-it-works.html" aria-current="page">How it Works</a>
+    <a href="app.html">The App</a>
+    <a href="safety.html">Safety</a>
+    <a href="index.html#team">Our Team</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- Photo hero -->
+  <section class="photo-hero">
+    <img class="photo-hero__img" src="assets/hiw-hero.jpg" alt="Warm, modern bathroom with a wall-hung toilet">
+    <div class="container photo-hero__content">
+      <h1>Your bathroom, now a <br>daily gut check</h1>
+      <a class="btn btn--light" href="#pilot">Join the Pilot</a>
+    </div>
+  </section>
+
+  <!-- Routine -->
+  <section class="section section--white">
+    <div class="container split">
+      <figure class="media-frame media-frame--tall reveal">
+        <img src="assets/hiw-routine.jpg" alt="Toilet in a warm beige bathroom">
+      </figure>
+      <div class="reveal">
+        <h2>Effortlessly fits<br>your routine</h2>
+        <p class="split__text">Mount PeekaPoo behind your toilet. Use the bathroom as usual. See your insights in the PeekaPoo app on HarmonyOS — no buttons, no logging, nothing to wear.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works: Sensing → Edge AI → Cloud → App -->
+  <section class="section section--cream how" id="how">
+    <div class="container">
+      <h2 class="reveal">How it works</h2>
+      <p class="lead reveal">From toilet to phone in four quiet steps. Colour, shape, frequency and smell all tell a story — and only the insight ever leaves your bathroom.</p>
+
+      <div class="how__grid reveal">
+        <div class="how__media" aria-live="polite">
+          <figure class="how__photo is-active" data-step="0">
+            <img src="assets/how-sensing.jpg" alt="Close-up of a small gas sensor board wired to a development board">
+            <figcaption class="how__chip"><b>8</b> gas channels · <b>1</b> camera · <b>0</b> contact</figcaption>
+          </figure>
+          <figure class="how__photo" data-step="1">
+            <img src="assets/how-edge.jpg" alt="Macro of a processor on a gold circuit board" loading="lazy">
+            <figcaption class="how__chip">Inference on-device — <b>raw images never leave</b></figcaption>
+          </figure>
+          <figure class="how__photo" data-step="2">
+            <img src="assets/how-cloud.jpg" alt="Rows of white server cabinets in a data centre" loading="lazy">
+            <figcaption class="how__chip">Only <b>scores &amp; trends</b> are uploaded</figcaption>
+          </figure>
+          <figure class="how__photo how__photo--light" data-step="3">
+            <img src="assets/how-app.jpg" alt="Hand holding a phone showing the PeekaPoo app with Digestive Score 78 and Hydration Score 64" loading="lazy">
+            <figcaption class="how__chip">Scores, alerts and an <b>AI assistant</b> in one place</figcaption>
+          </figure>
+        </div>
+
+        <ol class="how__list">
+          <li class="how__item is-active">
+            <button class="how__head" aria-expanded="true" aria-controls="how-b0" id="how-h0">
+              <span class="how__n">01</span><span class="how__title">Sensing</span>
+            </button>
+            <span class="how__bar" aria-hidden="true"><i></i></span>
+            <div class="how__body" id="how-b0" role="region" aria-labelledby="how-h0"><div class="how__inner">
+              <p>A camera behind the seat, with a colour reference card, captures the colour, shape and consistency of stool and urine. An 8-channel MEMS gas array picks up ammonia and VOC odour signals. Nothing touches you or the sample.</p>
+              <ul class="how__tags"><li>Camera + colour reference</li><li>8-channel gas array</li><li>Hi3861 control</li></ul>
+            </div></div>
+          </li>
+          <li class="how__item">
+            <button class="how__head" aria-expanded="false" aria-controls="how-b1" id="how-h1">
+              <span class="how__n">02</span><span class="how__title">Edge AI</span>
+            </button>
+            <span class="how__bar" aria-hidden="true"><i></i></span>
+            <div class="how__body" id="how-b1" role="region" aria-labelledby="how-h1"><div class="how__inner">
+              <p>An Atlas 200I DK A2 next to the toilet runs the vision and gas models locally, compares the result with your personal baseline, and makes a rule-based call: normal, watch, or red flag. Raw images are processed on the device and never uploaded.</p>
+              <ul class="how__tags"><li>Atlas 200I DK A2</li><li>Personal baseline</li><li>Raw images stay local</li></ul>
+            </div></div>
+          </li>
+          <li class="how__item">
+            <button class="how__head" aria-expanded="false" aria-controls="how-b2" id="how-h2">
+              <span class="how__n">03</span><span class="how__title">Cloud</span>
+            </button>
+            <span class="how__bar" aria-hidden="true"><i></i></span>
+            <div class="how__body" id="how-b2" role="region" aria-labelledby="how-h2"><div class="how__inner">
+              <p>Only features and scores travel to Huawei Cloud, where your long-term trends are kept and models improve over time on ModelArts. Improvements come back to your device as signed OTA updates.</p>
+              <ul class="how__tags"><li>Huawei Cloud</li><li>ModelArts</li><li>Signed OTA updates</li></ul>
+            </div></div>
+          </li>
+          <li class="how__item">
+            <button class="how__head" aria-expanded="false" aria-controls="how-b3" id="how-h3">
+              <span class="how__n">04</span><span class="how__title">App</span>
+            </button>
+            <span class="how__bar" aria-hidden="true"><i></i></span>
+            <div class="how__body" id="how-b3" role="region" aria-labelledby="how-h3"><div class="how__inner">
+              <p>The HarmonyOS app turns it all into a Digestive Score, a Hydration Score, daily insights and alerts, plus an AI assistant that explains them in plain words. When a red flag is raised, you can share it with a clinician.</p>
+              <ul class="how__tags"><li>HarmonyOS</li><li>AI chat assistant</li><li>Clinician on red flag</li></ul>
+            </div></div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- No more guessing -->
+  <section class="section section--white" id="scores">
+    <div class="container">
+      <h2 class="reveal">No more guessing</h2>
+      <div class="guess-copy reveal">
+        <p>PeekaPoo turns what you leave behind into scores and trends that get more personal the longer you use it. After the first few days it learns your baseline, so a change stands out against <em>your</em> normal — not a population average.</p>
+        <p>Ask the AI assistant what changed, watch how your baseline shifts, and share trend summaries with your care team for better-informed visits.</p>
+      </div>
+
+      <div class="tiles reveal">
+        <article class="tile is-open" tabindex="0">
+          <div class="tile__img"><img src="assets/card-digestive.jpg" alt="Person holding their stomach" loading="lazy"></div>
+          <h3>Digestive Score</h3>
+          <div class="tile__more"><div>
+            <p>Passively track how often and when you go, plus the colour, shape and consistency of every stool on the Bristol Stool Form Scale — so you can see your digestive health more clearly.</p>
+            <a href="app.html#screens">See it in the app</a>
+          </div></div>
+        </article>
+        <article class="tile" tabindex="0">
+          <div class="tile__img"><img src="assets/card-hydration.jpg" alt="Hand holding a glass of water" loading="lazy"></div>
+          <h3>Hydration Score</h3>
+          <div class="tile__more"><div>
+            <p>Urine colour, read against a colour reference card, becomes a daily Hydration Score — with a gentle nudge when it dips two days running.</p>
+            <a href="app.html#screens">See it in the app</a>
+          </div></div>
+        </article>
+        <article class="tile" tabindex="0">
+          <div class="tile__img"><img src="assets/hiw-alert.jpg" alt="Woman checking an alert on her phone" loading="lazy"></div>
+          <h3>Alert Warnings</h3>
+          <div class="tile__more"><div>
+            <p>The gas array watches ammonia and VOC levels. When a pattern breaks from your baseline you get a clear alert, and a red flag can be shared with a clinician.</p>
+            <a href="app.html#screens">See it in the app</a>
+          </div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect the dots -->
+  <section class="section section--cream">
+    <div class="container split">
+      <div class="dots-visual reveal">
+        <div class="phone">
+          <img src="assets/app-dashboard.png" alt="PeekaPoo dashboard with Bristol type chart and stool category view" loading="lazy">
+        </div>
+      </div>
+      <div class="reveal">
+        <h2>Connect the dots between habits and your gut</h2>
+        <p class="split__text">See your Bristol type chart, colour and consistency patterns, and what every stool type means. Then ask PeekaPoo's assistant — <em>“Is my gut health okay?”</em> — and get an answer grounded in your own week, not generic advice.</p>
+        <p class="fine">The on-device language model only words the answer. Risk levels come from transparent rules.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Private by design -->
+  <section class="section section--white">
+    <div class="container split">
+      <div class="reveal">
+        <h2>Private by design</h2>
+        <p class="split__text">Your data is personal, and PeekaPoo is built to keep it that way. Images are analysed on the device itself. Raw photos are never uploaded, and the cloud only ever sees scores and trends.</p>
+        <p class="split__text">The device lives in a sealed, moisture-resistant enclosure with low-voltage components, so it is safe in your bathroom.</p>
+        <a class="text-link" href="safety.html">More on safety</a>
+      </div>
+      <figure class="media-frame reveal">
+        <img src="assets/hiw-privacy.jpg" alt="Bathroom door ajar beside a claw-foot tub" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta">
+    <div class="cta__art" aria-hidden="true"></div>
+    <div class="container cta__content">
+      <h2>Know your gut better</h2>
+      <p>Smile from the InsideOut.</p>
+      <a class="btn btn--light" href="#pilot">Join the Pilot</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__signup" id="pilot">
+      <p>Keep up with PeekaPoo by joining our pilot list.</p>
+      <form class="signup" onsubmit="event.preventDefault(); this.classList.add('is-done');">
+        <input type="email" placeholder="Your email" aria-label="Your email" required>
+        <button type="submit" aria-label="Submit">→</button>
+        <span class="signup__ok">Thanks — we'll be in touch.</span>
+      </form>
+    </div>
+    <div>
+      <h4>Learn More</h4>
+      <a href="how-it-works.html">How it Works</a><a href="#scores">Digestive Score</a><a href="#scores">Hydration</a><a href="#scores">Alerts</a>
+    </div>
+    <div>
+      <h4>Project</h4>
+      <a href="app.html">The App</a><a href="index.html#team">Team InsideOut</a>
+    </div>
+    <div>
+      <h4>Trust</h4>
+      <a href="safety.html">Privacy &amp; Safety</a><a href="index.html#why">Why Gut Health</a>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <a class="logo logo--footer" href="index.html" aria-label="PeekaPoo home"><span class="logo__bold">PEEKAPOO</span><span class="logo__light">Health</span></a>
+    <small>© 2026 Team InsideOut, Universiti Sains Malaysia. A student project for the Huawei ICT Competition 2026–2027. Not a medical device.<br>Photos via Unsplash: Sasun Bughdaryan, Manki Kim, David Schultz, Denis Nuțiu, Manuel, Tony Marinescu, personalgraphic.com, POOJAN THANEKAR, Alex Simpson, Vitaly Gariev, Dan Smedley, Oliur, jason hu, Sardar Faizan, Age Cymru.</small>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

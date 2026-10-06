@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The PeekaPoo App – Gut Health Scores, Insights &amp; AI Assistant</title>
+  <meta name="description" content="The PeekaPoo app on HarmonyOS: Digestive and Hydration Scores, daily insights, alerts and an AI assistant that explains your gut health in plain words.">
+  <link rel="canonical" href="https://yangye3058845465-sys.github.io/peekapoo-website/app.html">
+  <meta name="theme-color" content="#f7f6f2">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PeekaPoo">
+  <meta property="og:title" content="The PeekaPoo App – Gut Health Scores, Insights &amp; AI Assistant">
+  <meta property="og:description" content="The PeekaPoo app on HarmonyOS: Digestive and Hydration Scores, daily insights, alerts and an AI assistant that explains your gut health in plain words.">
+  <meta property="og:url" content="https://yangye3058845465-sys.github.io/peekapoo-website/app.html">
+  <meta property="og:image" content="https://yangye3058845465-sys.github.io/peekapoo-website/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<!-- Announcement bar -->
+<div class="announce">
+  Huawei ICT Competition 2026–2027 · Innovation Track — <a href="index.html#team">Meet Team InsideOut</a>
+</div>
+
+<!-- Navigation -->
+<header class="nav" id="top">
+  <div class="container nav__inner">
+    <a class="logo" href="index.html" aria-label="PeekaPoo home">
+      <span class="logo__bold">PEEKAPOO</span><span class="logo__light">Health</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="how-it-works.html">How it Works</a>
+      <a href="app.html" aria-current="page">The App</a>
+      <a href="safety.html">Safety</a>
+    </nav>
+    <div class="nav__right">
+      <a class="nav__text" href="index.html#team">Our Team</a>
+      <a class="btn btn--dark btn--sm" href="#pilot">Join the Pilot</a>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav__mobile" hidden>
+    <a href="how-it-works.html">How it Works</a>
+    <a href="app.html" aria-current="page">The App</a>
+    <a href="safety.html">Safety</a>
+    <a href="index.html#team">Our Team</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- Photo hero -->
+  <section class="photo-hero photo-hero--cool">
+    <img class="photo-hero__img" src="assets/app-hero.jpg" alt="Hand holding a smartphone against a grey wall">
+    <div class="container photo-hero__content">
+      <h1>Your gut, <br>explained</h1>
+      <p>Scores, trends and alerts from every visit — in one HarmonyOS app.</p>
+      <a class="btn btn--light" href="#screens">Explore the Screens</a>
+    </div>
+  </section>
+
+  <!-- Peace of mind -->
+  <section class="section section--white">
+    <div class="container split">
+      <div class="reveal">
+        <h2>Peace of mind,<br>not more screen time</h2>
+        <p class="split__text">PeekaPoo works in the background. Open the app when you want a quick look at today's scores — or when something has genuinely changed. No logging, no streaks to keep, nothing to remember.</p>
+      </div>
+      <figure class="media-frame reveal">
+        <img src="assets/app-life.jpg" alt="Young woman smiling at her phone by a bright window">
+      </figure>
+    </div>
+  </section>
+
+  <!-- Screens -->
+  <section class="section section--cream" id="screens">
+    <div class="container center-head">
+      <h2 class="reveal">Okay… but what do all<br>these results mean?</h2>
+      <p class="lead reveal">Four screens turn every visit into something you can read at a glance.</p>
+    </div>
+    <div class="container showcase showcase--line reveal">
+      <div class="showcase__tabs" role="tablist" aria-label="App screens">
+        <button role="tab" aria-selected="true" data-tab="home">Homescreen</button>
+        <button role="tab" aria-selected="false" data-tab="dash">Dashboard</button>
+        <button role="tab" aria-selected="false" data-tab="stool">Stool Guide</button>
+        <button role="tab" aria-selected="false" data-tab="signals">Urine &amp; Gas</button>
+      </div>
+      <div class="showcase__stage">
+        <div class="phone">
+          <img id="showcase-img" src="assets/app-home.png" alt="PeekaPoo homescreen">
+        </div>
+        <div class="showcase__panels">
+          <div class="showcase__panel is-active" data-panel="home">
+            <h3>Everything at a glance</h3>
+            <dl>
+              <dt>Digestive Score</dt><dd>Based on the Bristol Stool Form Scale.</dd>
+              <dt>Hydration Score</dt><dd>Based on urine colour.</dd>
+              <dt>Daily Insight</dt><dd>Based on daily records and trends in your readings.</dd>
+              <dt>Alert Warnings</dt><dd>Raised on unusual patterns or trends.</dd>
+            </dl>
+          </div>
+          <div class="showcase__panel" data-panel="dash">
+            <h3>Your gut health index</h3>
+            <dl>
+              <dt>Bristol Type Chart</dt><dd>Visualises your bowel pattern over time.</dd>
+              <dt>Category View</dt><dd>Track stool colour, consistency and shape patterns.</dd>
+              <dt>Bristol Stool Icons</dt><dd>Tap any type to learn what it means.</dd>
+            </dl>
+          </div>
+          <div class="showcase__panel" data-panel="stool">
+            <h3>Learn every type</h3>
+            <p>Each stool type opens a plain-language card: what it represents, possible causes, and what you can do about it — from hydration to a bland diet for a day or two.</p>
+          </div>
+          <div class="showcase__panel" data-panel="signals">
+            <h3>Urine &amp; gas signals</h3>
+            <p>Urine colour distribution for the month, plus ammonia and VOC levels from the gas array over the past seven days — tracked alongside each other so a single spike is never read in isolation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI assistant -->
+  <section class="section section--white" id="assistant">
+    <div class="container split">
+      <div class="reveal">
+        <h2>Ask PeekaPoo anything</h2>
+        <p class="split__text">Ask about your stool patterns, scores and weekly trends, and get an answer grounded in your own data — not generic advice.</p>
+        <div class="chat chat--wide">
+          <p class="chat__q">How's my stool pattern this week?</p>
+          <p class="chat__a">You've mostly logged Type 3–4 this week — right in the healthy range. There was one Type 6 on Wednesday, but it hasn't repeated, so nothing concerning yet.</p>
+          <p class="chat__q">Currently, is my gut health okay?</p>
+          <p class="chat__a">Overall, yes. Your Digestive Score is 78 but your Hydration Score has dipped to 64 over the last two days — try adding a glass of water before lunch.</p>
+        </div>
+        <p class="fine">A small on-device language model only words the answer. Risk levels come from transparent rules, not the chatbot.</p>
+      </div>
+      <div class="dots-visual reveal">
+        <div class="phone">
+          <img src="assets/app-chat.png" alt="PeekaPoo assistant chat screen" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insight cards -->
+  <section class="section section--cream">
+    <div class="container split">
+      <ul class="insight-stack reveal" aria-label="Example notifications">
+        <li class="insight">
+          <span class="insight__icon insight__icon--gut" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2" stroke-linecap="round"/></svg>
+          </span>
+          <div>
+            <p class="insight__title">Digestive Score · 78</p>
+            <p class="insight__meta">Type 4 · well formed · 8:12 a.m.</p>
+          </div>
+        </li>
+        <li class="insight">
+          <span class="insight__icon insight__icon--hydra" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3.5s6 6.4 6 10.5a6 6 0 0 1-12 0c0-4.1 6-10.5 6-10.5Z"/></svg>
+          </span>
+          <div>
+            <p class="insight__title">Today's insight</p>
+            <p class="insight__meta">Your Hydration Score has dipped for two days running — try a glass of water before lunch.</p>
+          </div>
+        </li>
+        <li class="insight">
+          <span class="insight__icon insight__icon--alert" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3.5 2.8 19.5h18.4L12 3.5Z"/><path d="M12 10v4M12 16.8v.2" stroke-linecap="round"/></svg>
+          </span>
+          <div>
+            <p class="insight__title">Unusual pattern detected</p>
+            <p class="insight__meta">Ammonia is higher than your baseline. If you feel unwell, consider talking to a doctor.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="reveal">
+        <h2>Insights you can act on</h2>
+        <p class="split__text">Daily insights explain what changed and what to try next. Alerts only appear when a pattern breaks from your own baseline — and say when it is worth talking to a doctor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- System -->
+  <section class="section section--white" id="system">
+    <div class="container split">
+      <div class="system-visual reveal">
+        <div class="phone phone--tilt">
+          <img src="assets/app-home.png" alt="PeekaPoo app home screen with Digestive Score 78 and Hydration Score 64" loading="lazy">
+        </div>
+        <div class="float-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+          <span>Your Hydration Score dipped to <b>64</b> over the last two days.</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <h2>Your system for daily gut insights</h2>
+        <p class="subhead">PeekaPoo device + HarmonyOS app</p>
+        <p>Attach PeekaPoo behind your toilet. Use the bathroom as usual. See what your body is telling you in the app — with an AI assistant that explains your trends in plain words.</p>
+        <a class="btn btn--dark" href="how-it-works.html">How it Works</a>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="badges reveal" aria-label="Built on">
+        <li><b>Atlas 200I DK A2</b><span>Edge inference</span></li>
+        <li><b>Hi3861</b><span>Sensor control</span></li>
+        <li><b>HarmonyOS</b><span>Mobile app</span></li>
+        <li><b>Huawei Cloud</b><span>Trends &amp; OTA</span></li>
+        <li><b>ModelArts</b><span>Model training</span></li>
+        <li><b>ICT Competition</b><span>Innovation Track 2026–27</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta">
+    <div class="cta__art" aria-hidden="true"></div>
+    <div class="container cta__content">
+      <h2>Know your gut better</h2>
+      <p>Smile from the InsideOut.</p>
+      <a class="btn btn--light" href="#pilot">Join the Pilot</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__signup" id="pilot">
+      <p>Keep up with PeekaPoo by joining our pilot list.</p>
+      <form class="signup" onsubmit="event.preventDefault(); this.classList.add('is-done');">
+        <input type="email" placeholder="Your email" aria-label="Your email" required>
+        <button type="submit" aria-label="Submit">→</button>
+        <span class="signup__ok">Thanks — we'll be in touch.</span>
+      </form>
+    </div>
+    <div>
+      <h4>Learn More</h4>
+      <a href="how-it-works.html">How it Works</a><a href="how-it-works.html#scores">Digestive Score</a><a href="how-it-works.html#scores">Hydration</a><a href="how-it-works.html#scores">Alerts</a>
+    </div>
+    <div>
+      <h4>Project</h4>
+      <a href="app.html">The App</a><a href="index.html#team">Team InsideOut</a>
+    </div>
+    <div>
+      <h4>Trust</h4>
+      <a href="safety.html">Privacy &amp; Safety</a><a href="index.html#why">Why Gut Health</a>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <a class="logo logo--footer" href="index.html" aria-label="PeekaPoo home"><span class="logo__bold">PEEKAPOO</span><span class="logo__light">Health</span></a>
+    <small>© 2026 Team InsideOut, Universiti Sains Malaysia. A student project for the Huawei ICT Competition 2026–2027. Not a medical device.<br>Photos via Unsplash: Sasun Bughdaryan, Manki Kim, David Schultz, Denis Nuțiu, Manuel, Tony Marinescu, personalgraphic.com, POOJAN THANEKAR, Alex Simpson, Vitaly Gariev, Dan Smedley, Oliur, jason hu, Sardar Faizan, Age Cymru.</small>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

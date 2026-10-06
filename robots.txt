@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yangye3058845465-sys.github.io/peekapoo-website/sitemap.xml

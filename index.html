@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PeekaPoo – Non-Contact AI Gut Health Monitor for Your Toilet</title>
+  <meta name="description" content="PeekaPoo is a non-contact camera and gas-sensor system that quietly reads your gut health every time you use the toilet — Digestive and Hydration Scores, alerts and an AI assistant. By Team InsideOut, USM.">
+  <link rel="canonical" href="https://yangye3058845465-sys.github.io/peekapoo-website/">
+  <meta name="theme-color" content="#f7f6f2">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PeekaPoo">
+  <meta property="og:title" content="PeekaPoo – Non-Contact AI Gut Health Monitor for Your Toilet">
+  <meta property="og:description" content="PeekaPoo is a non-contact camera and gas-sensor system that quietly reads your gut health every time you use the toilet — Digestive and Hydration Scores, alerts and an AI assistant. By Team InsideOut, USM.">
+  <meta property="og:url" content="https://yangye3058845465-sys.github.io/peekapoo-website/">
+  <meta property="og:image" content="https://yangye3058845465-sys.github.io/peekapoo-website/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "name": "PeekaPoo", "url": "https://yangye3058845465-sys.github.io/peekapoo-website/"}, {"@type": "Organization", "name": "Team InsideOut", "url": "https://yangye3058845465-sys.github.io/peekapoo-website/", "logo": "https://yangye3058845465-sys.github.io/peekapoo-website/assets/apple-touch-icon.png", "description": "Student team from Universiti Sains Malaysia building PeekaPoo for the Huawei ICT Competition 2026–2027 Innovation Track."}]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<!-- Announcement bar -->
+<div class="announce">
+  Huawei ICT Competition 2026–2027 · Innovation Track — <a href="#team">Meet Team InsideOut</a>
+</div>
+
+<!-- Navigation -->
+<header class="nav" id="top">
+  <div class="container nav__inner">
+    <a class="logo" href="index.html" aria-label="PeekaPoo home">
+      <span class="logo__bold">PEEKAPOO</span><span class="logo__light">Health</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="how-it-works.html">How it Works</a>
+      <a href="app.html">The App</a>
+      <a href="safety.html">Safety</a>
+    </nav>
+    <div class="nav__right">
+      <a class="nav__text" href="#team">Our Team</a>
+      <a class="btn btn--dark btn--sm" href="#pilot">Join the Pilot</a>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav__mobile" hidden>
+    <a href="how-it-works.html">How it Works</a>
+    <a href="app.html">The App</a>
+    <a href="safety.html">Safety</a>
+    <a href="#team">Our Team</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero: product film loops behind the headline -->
+  <section class="hero">
+    <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg" aria-hidden="true">
+      <source src="assets/hero-video-sm.mp4" type="video/mp4" media="(max-width: 700px)">
+      <source src="assets/hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="hero__veil" aria-hidden="true"></div>
+    <div class="container hero__content">
+      <h1>Go beyond <br>gut feeling</h1>
+      <p>A non-contact camera + sensor system that quietly reads your gut health every time you use the toilet.</p>
+      <a class="btn btn--dark" href="how-it-works.html">Explore How it Works</a>
+    </div>
+    <button class="hero__toggle" type="button" aria-label="Pause background video" aria-pressed="false">
+      <svg class="hero__icon-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="6" width="3.2" height="12" rx="1"/><rect x="13.8" y="6" width="3.2" height="12" rx="1"/></svg>
+      <svg class="hero__icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6.2v11.6a.8.8 0 0 0 1.2.7l9-5.8a.8.8 0 0 0 0-1.4l-9-5.8a.8.8 0 0 0-1.2.7Z"/></svg>
+    </button>
+  </section>
+
+  <!-- Turn your toilet into a tracker -->
+  <section class="section section--white" id="tracker">
+    <div class="container">
+      <h2 class="reveal">Your toilet, now a<br>health monitor</h2>
+      <p class="lead reveal">Catch what wearables miss — with passive, daily monitoring of what your body leaves behind. No manual logging, no extra wearable, no lifestyle change.</p>
+
+      <div class="cards3">
+        <article class="metric-card metric-card--gut reveal">
+          <div class="metric-card__media">
+            <img class="metric-card__photo" src="assets/card-digestive.jpg" alt="Person holding their stomach in discomfort" loading="lazy">
+            <div class="ring" data-value="78" style="--ring:#8E44AD">
+              <svg viewBox="0 0 120 120"><circle class="ring__track" cx="60" cy="60" r="52"/><circle class="ring__bar" cx="60" cy="60" r="52"/></svg>
+              <div class="ring__label"><b class="ring__num" data-count="78">0</b><small>/100</small></div>
+            </div>
+          </div>
+          <div class="metric-card__body">
+            <h3>Digestive Score</h3>
+            <p>Built on the Bristol Stool Form Scale — see how food, stress, and late nights shape what's happening in your gut.</p>
+          </div>
+        </article>
+
+        <article class="metric-card metric-card--hydra reveal">
+          <div class="metric-card__media">
+            <img class="metric-card__photo" src="assets/card-hydration.jpg" alt="Hand holding a glass of water in window light" loading="lazy">
+            <div class="ring" data-value="64" style="--ring:#2F6FD6">
+              <svg viewBox="0 0 120 120"><circle class="ring__track" cx="60" cy="60" r="52"/><circle class="ring__bar" cx="60" cy="60" r="52"/></svg>
+              <div class="ring__label"><b class="ring__num" data-count="64">0</b><small>/100</small></div>
+            </div>
+          </div>
+          <div class="metric-card__body">
+            <h3>Hydration Score</h3>
+            <p>Read from urine colour against a colour reference, so you know when a glass of water before lunch is due.</p>
+          </div>
+        </article>
+
+        <article class="metric-card metric-card--alert reveal">
+          <div class="metric-card__media">
+            <img class="metric-card__photo" src="assets/card-alert.jpg" alt="Toilet in a bathroom lit by warm evening sun" loading="lazy">
+            <div class="ring ring--icon" data-value="100" style="--ring:#D2424B">
+              <svg viewBox="0 0 120 120"><circle class="ring__track" cx="60" cy="60" r="52"/><circle class="ring__bar" cx="60" cy="60" r="52"/></svg>
+              <div class="ring__label">
+                <svg class="ring__glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 10v4.5M12 17.2v.3" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="metric-card__body">
+            <h3>Alert Warnings</h3>
+            <p>An 8-channel gas array and your personal baseline flag unusual patterns — like an ammonia spike — before they become routine.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section section--cream" id="why">
+    <div class="container">
+      <h2 class="reveal">We track almost everything…<br>except our gut</h2>
+      <p class="lead reveal">Phone notifications, daily steps, sleep hours — checked every day. Yet about 70% of our immune cells live in the gut.</p>
+      <div class="stats">
+        <article class="stat reveal">
+          <div class="stat__top"><b>USD 105.7B</b><span>market</span></div>
+          <p>Projected size of the global gut health market by 2029.</p>
+        </article>
+        <article class="stat reveal">
+          <div class="stat__top"><b>Up to 40%</b><span>of people</span></div>
+          <p>Meet the criteria for at least one functional GI disorder.</p>
+        </article>
+        <article class="stat reveal">
+          <div class="stat__top"><b>≈ 1 in 9</b><span>adults</span></div>
+          <p>Live with functional constipation.</p>
+        </article>
+        <article class="stat reveal">
+          <div class="stat__top"><b>70%</b><span>drop off</span></div>
+          <p>Of users stop using health apps within 100 days — so PeekaPoo needs no logging at all.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who it's for -->
+  <section class="section section--white" id="users">
+    <div class="container split split--bottom">
+      <div class="reveal">
+        <p class="eyebrow">Who it's for</p>
+        <h2>So… who would<br>need this?</h2>
+      </div>
+      <p class="lead reveal">Anyone who would rather notice a change early than explain it away — without logging a single thing.</p>
+    </div>
+
+    <div class="container personas">
+      <article class="persona reveal">
+        <figure class="persona__media">
+          <img src="assets/user-everyday.jpg" alt="Woman reading at a kitchen table in the morning" loading="lazy">
+          <span class="persona__tag">Primary</span>
+        </figure>
+        <h3>Everyday adults</h3>
+        <p class="persona__line">Digestive and hydration self-monitoring, built into a routine you already have.</p>
+        <ul class="persona__jobs">
+          <li>No manual logging</li><li>A personal baseline</li><li>Early change visibility</li>
+        </ul>
+      </article>
+      <article class="persona reveal">
+        <figure class="persona__media">
+          <img src="assets/user-caregiver.jpg" alt="Caregiver sharing a laugh with an elderly woman" loading="lazy">
+          <span class="persona__tag">Secondary</span>
+        </figure>
+        <h3>Older adults + caregivers</h3>
+        <p class="persona__line">Passive monitoring for peace of mind — for the person and the people who look after them.</p>
+        <ul class="persona__jobs">
+          <li>Passive monitoring</li><li>Caregiver visibility</li><li>Routine-friendly</li>
+        </ul>
+      </article>
+      <article class="persona reveal">
+        <figure class="persona__media">
+          <img src="assets/user-provider.jpg" alt="Doctor speaking with a patient over a video call" loading="lazy">
+          <span class="persona__tag">Buyer / Partner</span>
+        </figure>
+        <h3>Telehealth + GI providers</h3>
+        <p class="persona__line">Better long-term data for remote care, without asking patients to keep a diary.</p>
+        <ul class="persona__jobs">
+          <li>Remote follow-up</li><li>Trend summaries</li><li>Quick deployment</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="container">
+      <div class="common reveal">
+        <div class="common__item">
+          <span class="common__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/><path d="m9 14.5 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><h3>A daily data source</h3><p>Bathroom habits provide regular health signals — every single day.</p></div>
+        </div>
+        <div class="common__item">
+          <span class="common__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7.5-4.4-7.5-10.2A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 7.5 2.8C19.5 16.6 12 21 12 21Z"/></svg></span>
+          <div><h3>A passive experience</h3><p>No manual logging, no extra wearable, no lifestyle change.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Questions band (headlines style) -->
+  <section class="quotes" aria-label="Questions we hear">
+    <p class="quotes__title">Questions we hear</p>
+    <div class="quotes__track" id="quotes-track">
+      <figure><blockquote>“Nothing big deal, right? I just need some rest.”</blockquote><figcaption>Small signals are early warnings.</figcaption></figure>
+      <figure><blockquote>“Observing my stool? That sounds a little weird…”</blockquote><figcaption>Colour, shape, frequency, smell.</figcaption></figure>
+      <figure><blockquote>“But I'm not a doctor — I don't know what to look for.”</blockquote><figcaption>PeekaPoo tracks it for you.</figcaption></figure>
+      <figure><blockquote>“Okay… but what do all these results mean?”</blockquote><figcaption>Two scores. One AI assistant.</figcaption></figure>
+      <figure><blockquote>“Wait… no one else can see these photos, right?”</blockquote><figcaption>Raw images never leave the device.</figcaption></figure>
+      <figure><blockquote>“How can I check my gut health in real time?”</blockquote><figcaption>Edge AI on Atlas 200I DK A2.</figcaption></figure>
+      <figure><blockquote>“So… who would need this?”</blockquote><figcaption>Adults, caregivers, providers.</figcaption></figure>
+    </div>
+    <div class="quotes__nav">
+      <button class="quotes__btn" data-dir="-1" aria-label="Previous">‹</button>
+      <span class="quotes__dots" id="quotes-dots"></span>
+      <button class="quotes__btn" data-dir="1" aria-label="Next">›</button>
+    </div>
+  </section>
+
+  <!-- Responsibility block (partnership style) -->
+  <section class="section section--cream">
+    <div class="container split">
+      <div class="seal reveal" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <defs><path id="sealpath" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+          <circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="100" cy="100" r="58" fill="none" stroke="currentColor" stroke-width="1"/>
+          <text font-size="13" fill="currentColor"><textPath href="#sealpath" textLength="458" lengthAdjust="spacing">SCREENING · TRIAGE · NOT DIAGNOSIS · </textPath></text>
+          <path d="M100 70 l24 10 v18 c0 16-11 27-24 32 c-13-5-24-16-24-32 v-18z" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M90 100 l7 7 l14 -14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="reveal">
+        <h2 class="h2--sm">Screening, not diagnosis</h2>
+        <p>PeekaPoo is a wellness screening and triage aid. It helps you notice changes early and decide when to talk to a professional — it does not diagnose disease. Red flags are routed to a clinician, and every decision rule is transparent.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section section--white" id="team">
+    <div class="container split">
+      <div class="reveal">
+        <p class="eyebrow">The team</p>
+        <h2>We are Team InsideOut</h2>
+        <p>Three students from Universiti Sains Malaysia (USM), building PeekaPoo for the Huawei ICT Competition 2026–2027 Innovation Track — because gut health deserves the same attention as our steps and sleep.</p>
+      </div>
+      <figure class="team-photo reveal">
+        <img src="assets/team.png" alt="Portraits of the three members of Team InsideOut">
+      </figure>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta">
+    <div class="cta__art" aria-hidden="true"></div>
+    <div class="container cta__content">
+      <h2>Know your gut better</h2>
+      <p>Smile from the InsideOut.</p>
+      <a class="btn btn--light" href="#pilot">Join the Pilot</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__signup" id="pilot">
+      <p>Keep up with PeekaPoo by joining our pilot list.</p>
+      <form class="signup" onsubmit="event.preventDefault(); this.classList.add('is-done');">
+        <input type="email" placeholder="Your email" aria-label="Your email" required>
+        <button type="submit" aria-label="Submit">→</button>
+        <span class="signup__ok">Thanks — we'll be in touch.</span>
+      </form>
+    </div>
+    <div>
+      <h4>Learn More</h4>
+      <a href="how-it-works.html">How it Works</a><a href="#tracker">Digestive Score</a><a href="#tracker">Hydration</a><a href="#tracker">Alerts</a>
+    </div>
+    <div>
+      <h4>Project</h4>
+      <a href="app.html">The App</a><a href="#team">Team InsideOut</a>
+    </div>
+    <div>
+      <h4>Trust</h4>
+      <a href="safety.html">Privacy &amp; Safety</a><a href="#why">Why Gut Health</a>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <a class="logo logo--footer" href="index.html" aria-label="PeekaPoo home"><span class="logo__bold">PEEKAPOO</span><span class="logo__light">Health</span></a>
+    <small>© 2026 Team InsideOut, Universiti Sains Malaysia. A student project for the Huawei ICT Competition 2026–2027. Not a medical device.<br>Photos via Unsplash: Sasun Bughdaryan, Manki Kim, David Schultz, Denis Nuțiu, Manuel, Tony Marinescu, personalgraphic.com, POOJAN THANEKAR, Alex Simpson, Vitaly Gariev, Dan Smedley, Oliur, jason hu, Sardar Faizan, Age Cymru.</small>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
