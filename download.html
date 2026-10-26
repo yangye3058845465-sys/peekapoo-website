@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=dc4a9ef2">
+  <link rel="stylesheet" href="styles.css?v=6ccd00a1">
   <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
@@ -94,17 +94,26 @@
           </span>
           <div>
             <h3>HarmonyOS</h3>
-            <p class="get-card__tag">Native app · in pilot testing</p>
+            <p class="get-card__tag">App download · 62 KB</p>
           </div>
         </div>
-        <p class="get-card__text">Our native HarmonyOS NEXT app is in pilot testing, with an AppGallery release planned. Until then, use PeekaPoo straight from your browser. It's the same account and the same results.</p>
-        <ol class="get-steps">
-          <li>Tap <b>Open PeekaPoo</b> below.</li>
-          <li>In the browser menu, choose <b>Add to home screen</b>.</li>
-          <li>Open PeekaPoo from your home screen and sign up.</li>
-        </ol>
-        <a class="btn btn--dark get-card__btn" href="https://peekapoo.pythonanywhere.com/m/" target="_blank" rel="noopener">Open PeekaPoo</a>
-        <p class="fine">Works in Huawei Browser or any modern browser.</p>
+        <p class="get-card__text">Check your version in <b>Settings › About phone</b>, then follow the matching steps.</p>
+
+        <div class="get-variant">
+          <h4>HarmonyOS 4.x or earlier</h4>
+          <ol class="get-steps">
+            <li>Tap <b>Download app</b> below.</li>
+            <li>Open the file. If the phone warns about an external app or Pure mode, choose to <b>continue installing</b>.</li>
+            <li>Open PeekaPoo and sign up.</li>
+          </ol>
+          <a class="btn btn--dark" href="downloads/PeekaPoo.apk" download>Download app</a>
+        </div>
+
+        <div class="get-variant">
+          <h4>HarmonyOS NEXT (5.0 or later)</h4>
+          <p class="get-variant__text">Our native HarmonyOS NEXT app is in pilot testing for AppGallery. For now, open PeekaPoo in your browser and choose <b>Add to home screen</b>. It's the same account and the same results.</p>
+          <a class="btn btn--outline" href="https://peekapoo.pythonanywhere.com/m/" target="_blank" rel="noopener">Open PeekaPoo</a>
+        </div>
       </article>
 
       <article class="get-card reveal" id="android">

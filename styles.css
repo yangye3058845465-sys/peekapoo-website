@@ -524,3 +524,8 @@ p { margin: 0; }
   .get-card__alt { margin-top: 12px; }
   .get-card { padding: 26px 20px; }
 }
+.get-variant { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--line); }
+.get-variant h4 { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+.get-variant .get-steps { margin-top: 12px; }
+.get-variant .btn { margin-top: 4px; }
+.get-variant__text { margin: 8px 0 16px; font-size: 15px; color: var(--ink-2); }
