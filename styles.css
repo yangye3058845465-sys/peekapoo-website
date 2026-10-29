@@ -529,3 +529,13 @@ p { margin: 0; }
 .get-variant .get-steps { margin-top: 12px; }
 .get-variant .btn { margin-top: 4px; }
 .get-variant__text { margin: 8px 0 16px; font-size: 15px; color: var(--ink-2); }
+
+/* ---------- Legal pages ---------- */
+.legal__body { max-width: 760px; }
+.legal__body h1 { margin-bottom: 8px; }
+.legal__body h2 { margin: 48px 0 14px; }
+.legal__body p, .legal__body li { color: var(--ink-2); font-size: 16px; }
+.legal__body p + p { margin-top: 12px; }
+.legal__body ul { margin: 0 0 12px; padding-left: 20px; }
+.legal__body li { margin: 8px 0; }
+.legal__body a { text-underline-offset: 3px; }
